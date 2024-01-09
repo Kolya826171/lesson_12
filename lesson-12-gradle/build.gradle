@@ -1,0 +1,21 @@
+
+plugins {
+    id 'java-library'
+    id 'war'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/junit/junit
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
+
+    // https://mvnrepository.com/artifact/javax.servlet/servlet-api
+    compileOnly group: 'javax.servlet', name: 'servlet-api', version: '2.5'
+    
+    // https://mvnrepository.com/artifact/javax.servlet/jstl
+    implementation group: 'javax.servlet', name: 'jstl', version: '1.1.2'
+
+}
